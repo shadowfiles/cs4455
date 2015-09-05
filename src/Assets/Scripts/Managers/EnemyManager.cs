@@ -7,6 +7,9 @@ public class EnemyManager : MonoBehaviour
     public float spawnTime = 3f;
     public Transform[] spawnPoints;
 
+	public static int enemyCount = 0;
+	public static int maxEnemies = 100;
+
 
     void Start ()
     {
@@ -16,7 +19,7 @@ public class EnemyManager : MonoBehaviour
 
     void Spawn ()
     {
-        if(playerHealth.currentHealth <= 0f)
+		if(playerHealth.currentHealth <= 0f || enemyCount >= maxEnemies)
         {
             return;
         }
@@ -24,5 +27,6 @@ public class EnemyManager : MonoBehaviour
         int spawnPointIndex = Random.Range (0, spawnPoints.Length);
 
         Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+		enemyCount++;
     }
 }

@@ -1,0 +1,32 @@
+# =============== #
+# Unity generated #
+# =============== #
+src/[Tt]emp/
+src/[Oo]bj/
+src/[Bb]uild
+src/[Ll]ibrary/
+src/sysinfo.txt
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+src/[Ee]xported[Oo]bj/
+src/*.userprefs
+src/*.csproj
+src/*.pidb
+src/*.suo
+src/*.sln*
+src/*.user
+src/*.unityproj
+src/*.booproj
+ 
+# ============ #
+# OS generated #
+# ============ #
+src/.DS_Store*
+src/._*
+src/.Spotlight-V100
+src/.Trashes
+src/Icon?
+src/ehthumbs.db
+src/[Tt]humbs.db

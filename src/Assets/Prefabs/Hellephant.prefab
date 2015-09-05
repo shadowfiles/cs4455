@@ -219,7 +219,7 @@ Animator:
   m_GameObject: {fileID: 104722}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b77f122f451a2394898a24191c26107c, type: 3}
-  m_Controller: {fileID: 22100000, guid: 4a07e5a9b679551458ac79f9d86161e0, type: 2}
+  m_Controller: {fileID: 22100000, guid: 4a6d237e8f6fbb34798f645bbeb50989, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -244,7 +244,8 @@ MonoBehaviour:
   scoreValue: 50
   deathClip: {fileID: 8300000, guid: 8c615fd0429f34edf85539d70279360d, type: 3}
   drops:
-  - {fileID: 173832, guid: ea0bb615212447c40bcbd2defe3e7653, type: 2}
+  - {fileID: 178948, guid: 895ae1c84a2594944bafd386bd760132, type: 2}
+  - {fileID: 109914, guid: 11490104ac04adc439b0aba08775a86b, type: 2}
   dropChance: 70
 --- !u!114 &11474866
 MonoBehaviour:
@@ -2528,12 +2529,12 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: drops.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 22100000, guid: 4a07e5a9b679551458ac79f9d86161e0,
+      objectReference: {fileID: 22100000, guid: 4a6d237e8f6fbb34798f645bbeb50989,
         type: 2}
     - target: {fileID: 0}
       propertyPath: dropChance
@@ -2542,7 +2543,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: drops.Array.data[0]
       value: 
-      objectReference: {fileID: 173832, guid: ea0bb615212447c40bcbd2defe3e7653, type: 2}
+      objectReference: {fileID: 178948, guid: 895ae1c84a2594944bafd386bd760132, type: 2}
+    - target: {fileID: 0}
+      propertyPath: drops.Array.data[1]
+      value: 
+      objectReference: {fileID: 109914, guid: 11490104ac04adc439b0aba08775a86b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 104722}
