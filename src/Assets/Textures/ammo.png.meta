@@ -1,13 +1,22 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 4d28c2dbed0ee914da3c6721fc98eadd
 timeCreated: 1441403891
+=======
+guid: 2a002dbf1f4915c429720ca25e167f55
+timeCreated: 1441424980
+>>>>>>> gh-pages
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
+<<<<<<< HEAD
     enableMipMap: 0
+=======
+    enableMipMap: 1
+>>>>>>> gh-pages
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0

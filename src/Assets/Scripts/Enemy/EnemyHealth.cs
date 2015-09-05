@@ -7,6 +7,8 @@ public class EnemyHealth : MonoBehaviour
     public float sinkSpeed = 2.5f;
     public int scoreValue = 10;
     public AudioClip deathClip;
+	public GameObject[] drops;
+	public int dropChance = 30;
 
 
     Animator anim;
@@ -66,6 +68,12 @@ public class EnemyHealth : MonoBehaviour
 
         enemyAudio.clip = deathClip;
         enemyAudio.Play ();
+
+		EnemyManager.enemyCount--;
+
+		if (Random.Range (0, 100) < dropChance) {
+			Instantiate (drops[Random.Range (0, drops.Length)], transform.position, transform.rotation);
+		}
     }
 
 
@@ -74,7 +82,7 @@ public class EnemyHealth : MonoBehaviour
         GetComponent <NavMeshAgent> ().enabled = false;
         GetComponent <Rigidbody> ().isKinematic = true;
         isSinking = true;
-        //ScoreManager.score += scoreValue;
+        ScoreManager.score += scoreValue;
         Destroy (gameObject, 2f);
     }
 }

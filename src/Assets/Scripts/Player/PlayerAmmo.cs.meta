@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1341cc2d7dbf2b244810b12b8150dc7c
 timeCreated: 1441415804
+=======
+guid: c6bca60d1f587064e9cb0f932c2c30dd
+timeCreated: 1441426822
+>>>>>>> gh-pages
 licenseType: Free
 MonoImporter:
   serializedVersion: 2

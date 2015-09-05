@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: 7419c121ad9aa4a45a842adedc91c79c
 folderAsset: yes
+<<<<<<< HEAD
 timeCreated: 1441395273
+=======
+timeCreated: 1441427767
+>>>>>>> gh-pages
 licenseType: Free
 DefaultImporter:
   userData: 

@@ -2,9 +2,10 @@
 
 public class PlayerShooting : MonoBehaviour
 {
-    public int damagePerShot = 20;
+    public int damagePerShot = 50;
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
+	public PlayerAmmo playerAmmo;
 
 
     float timer;
@@ -43,7 +44,6 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 
-
     public void DisableEffects ()
     {
         gunLine.enabled = false;
@@ -53,7 +53,12 @@ public class PlayerShooting : MonoBehaviour
 
     void Shoot ()
     {
-        timer = 0f;
+		if (!playerAmmo.HasAmmo())
+			return;
+
+		playerAmmo.UseAmmo ();
+        
+		timer = 0f;
 
         gunAudio.Play ();
 

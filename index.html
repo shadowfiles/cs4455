@@ -15,10 +15,10 @@
 		<script type="text/javascript">
 		<!--
 			var config = {
-				width: 960, 
+				width: 960,
 				height: 600,
 				params: { enableDebugging:"0" }
-				
+
 			};
 			var u = new UnityObject2(config);
 
@@ -28,7 +28,7 @@
 				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
 				$missingScreen.hide();
 				$brokenScreen.hide();
-				
+
 				u.observeProgress(function (progress) {
 					switch(progress.pluginStatus) {
 						case "broken":
@@ -56,7 +56,7 @@
 						break;
 					}
 				});
-				u.initPlugin(jQuery("#unityPlayer")[0], "CS4455.unity3d");
+				u.initPlugin(jQuery("#unityPlayer")[0], "survival-shooter.unity3d");
 			});
 		-->
 		</script>
@@ -74,14 +74,15 @@
 		a:active, a:hover {
 			color: #666;
 		}
+		p {
+			text-align: left;
+		}
+
 		p.header {
 			font-size: small;
 		}
 		p.header span {
 			font-weight: bold;
-		}
-		p.footer {
-			font-size: x-small;
 		}
 		div.content {
 			margin: auto;
@@ -131,6 +132,24 @@
 				</div>
 			</div>
 		</div>
-		<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+		<p>
+			This game is based on <a href="https://unity3d.com/learn/tutorials/projects/survival-shooter-project">Unity's survival shooter tutorial</a>.
+		</p>
+		<p>
+			It was created for Georgia Tech's video game design class CS 4455. The following changes to the game from the tutorial version were made:
+		</p>
+		<ul>
+			<li>Ammo is limited</li>
+			<li>There are ammo spawn locations</li>
+			<li>Monsters have a chance to drop ammo</li>
+			<li>Hellephants have a chance of dropping health</li>
+			<li>The size of the level is twice as big</li>
+			<li>Bullets are significantly stronger</li>
+			<li>Monsters spawn faster</li>
+			<li>There is a cap on the number of monsters that can spawn</li>
+		</ul>
+		<p>
+			<a href="SurvivalShooterAssets.zip">Many of the original project assets were added to and edited to make these changes. You can download the updated assets here. . </a>
+		</p>
 	</body>
 </html>

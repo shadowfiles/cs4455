@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 3b61a4e456826dd4eb160734f650b751
 timeCreated: 1441419162
 licenseType: Free
@@ -6,3 +7,8 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+guid: 7684b011ce5d1a74289a94d4e2ca434a
+NativeFormatImporter:
+  userData: 
+>>>>>>> gh-pages

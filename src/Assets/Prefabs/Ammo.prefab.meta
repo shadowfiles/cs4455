@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ea0bb615212447c40bcbd2defe3e7653
 timeCreated: 1441414775
+=======
+guid: 11490104ac04adc439b0aba08775a86b
+timeCreated: 1441432450
+>>>>>>> gh-pages
 licenseType: Free
 NativeFormatImporter:
   userData: 
