@@ -99,7 +99,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 58134717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1341cc2d7dbf2b244810b12b8150dc7c, type: 3}
+  m_Script: {fileID: 11500000, guid: c6bca60d1f587064e9cb0f932c2c30dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxAmmo: 20
@@ -243,6 +243,22 @@ Prefab:
       propertyPath: playerAmmo
       value: 
       objectReference: {fileID: 58134718}
+    - target: {fileID: 11403392, guid: a747b99a3d8473f4a832841c8bfe35d8, type: 2}
+      propertyPath: deathClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
+    - target: {fileID: 11403392, guid: a747b99a3d8473f4a832841c8bfe35d8, type: 2}
+      propertyPath: flashColour.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11403392, guid: a747b99a3d8473f4a832841c8bfe35d8, type: 2}
+      propertyPath: flashColour.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11403392, guid: a747b99a3d8473f4a832841c8bfe35d8, type: 2}
+      propertyPath: flashColour.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a747b99a3d8473f4a832841c8bfe35d8, type: 2}
   m_IsPrefabParent: 0
@@ -525,8 +541,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 2004125486}
-  enemy: {fileID: 180322, guid: 7cb6ee99934cc6d4e8387a2bc7d4f8a4, type: 2}
-  spawnTime: 3
+  enemy: {fileID: 130392, guid: 7cb6ee99934cc6d4e8387a2bc7d4f8a4, type: 2}
+  spawnTime: 1
   spawnPoints:
   - {fileID: 990857978}
   - {fileID: 973688808}
@@ -543,7 +559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 2004125486}
   enemy: {fileID: 100000, guid: ffdde77c7de2ec246907b187471ed7d0, type: 2}
-  spawnTime: 3
+  spawnTime: 4
   spawnPoints:
   - {fileID: 695083816}
   - {fileID: 1880211309}
@@ -560,7 +576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 2004125486}
   enemy: {fileID: 104722, guid: 2f8e5dcb17eda3542bf9cd4ef63425e3, type: 2}
-  spawnTime: 10
+  spawnTime: 7
   spawnPoints:
   - {fileID: 677776967}
   - {fileID: 680186114}
@@ -736,7 +752,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &608539448
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,7 +974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 4d28c2dbed0ee914da3c6721fc98eadd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a002dbf1f4915c429720ca25e167f55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1896,7 +1912,7 @@ Animator:
   m_GameObject: {fileID: 1371981620}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3b61a4e456826dd4eb160734f650b751, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7684b011ce5d1a74289a94d4e2ca434a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1995,16 +2011,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1539041621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2278725604cab664ca6e207be0bed663, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d68d8efae49773449b2c7693213b658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drop: {fileID: 173832, guid: ea0bb615212447c40bcbd2defe3e7653, type: 2}
   spawnTime: 10
   spawnPoints:
   - {fileID: 920807511}
   - {fileID: 1258457123}
   - {fileID: 1999958509}
   - {fileID: 1069377790}
+  drop: {fileID: 109914, guid: 11490104ac04adc439b0aba08775a86b, type: 2}
 --- !u!1 &1620064692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,7 +2307,7 @@ MonoBehaviour:
   m_Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .501960814}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
 --- !u!114 &1832834298

@@ -69,6 +69,8 @@ public class EnemyHealth : MonoBehaviour
         enemyAudio.clip = deathClip;
         enemyAudio.Play ();
 
+		EnemyManager.enemyCount--;
+
 		if (Random.Range (0, 100) < dropChance) {
 			Instantiate (drops[Random.Range (0, drops.Length)], transform.position, transform.rotation);
 		}
