@@ -1,155 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Unity Web Player | Nightmares</title>
-		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
-		<script type="text/javascript">
-		<!--
-		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
-		if (document.location.protocol == 'https:')
-			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
-		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
-		-->
-		</script>
-		<script type="text/javascript">
-		<!--
-			var config = {
-				width: 960,
-				height: 600,
-				params: { enableDebugging:"0" }
+<!doctype html>
 
-			};
-			var u = new UnityObject2(config);
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
-			jQuery(function() {
+  <title>Tiff's CS4455 page</title>
+  <meta name="description" content="Tiff's CS4455 Stuff">
+  <meta name="author" content="Tiff Zhang">
 
-				var $missingScreen = jQuery("#unityPlayer").find(".missing");
-				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
-				$missingScreen.hide();
-				$brokenScreen.hide();
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
 
-				u.observeProgress(function (progress) {
-					switch(progress.pluginStatus) {
-						case "broken":
-							$brokenScreen.find("a").click(function (e) {
-								e.stopPropagation();
-								e.preventDefault();
-								u.installPlugin();
-								return false;
-							});
-							$brokenScreen.show();
-						break;
-						case "missing":
-							$missingScreen.find("a").click(function (e) {
-								e.stopPropagation();
-								e.preventDefault();
-								u.installPlugin();
-								return false;
-							});
-							$missingScreen.show();
-						break;
-						case "installed":
-							$missingScreen.remove();
-						break;
-						case "first":
-						break;
-					}
-				});
-				u.initPlugin(jQuery("#unityPlayer")[0], "survival-shooter.unity3d");
-			});
-		-->
-		</script>
-		<style type="text/css">
-		<!--
-		body {
-			font-family: Helvetica, Verdana, Arial, sans-serif;
-			background-color: white;
-			color: black;
-			text-align: center;
-		}
-		a:link, a:visited {
-			color: #000;
-		}
-		a:active, a:hover {
-			color: #666;
-		}
-		p {
-			text-align: left;
-		}
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
 
-		p.header {
-			font-size: small;
-		}
-		p.header span {
-			font-weight: bold;
-		}
-		div.content {
-			margin: auto;
-			width: 960px;
-		}
-		div.broken,
-		div.missing {
-			margin: auto;
-			position: relative;
-			top: 50%;
-			width: 193px;
-		}
-		div.broken a,
-		div.missing a {
-			height: 63px;
-			position: relative;
-			top: -31px;
-		}
-		div.broken img,
-		div.missing img {
-			border-width: 0px;
-		}
-		div.broken {
-			display: none;
-		}
-		div#unityPlayer {
-			cursor: default;
-			height: 600px;
-			width: 960px;
-		}
-		-->
-		</style>
-	</head>
-	<body>
-		<p class="header"><span>Unity Web Player | </span>Nightmares</p>
-		<div class="content">
-			<div id="unityPlayer">
-				<div class="missing">
-					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
-						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
-					</a>
-				</div>
-				<div class="broken">
-					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
-						<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
-					</a>
-				</div>
-			</div>
-		</div>
-		<p>
-			This game is based on <a href="https://unity3d.com/learn/tutorials/projects/survival-shooter-project">Unity's survival shooter tutorial</a>.
-		</p>
-		<p>
-			It was created for Georgia Tech's video game design class CS 4455. The following changes to the game from the tutorial version were made:
-		</p>
-		<ul>
-			<li>Ammo is limited</li>
-			<li>There are ammo spawn locations</li>
-			<li>Monsters have a chance to drop ammo</li>
-			<li>Hellephants have a chance of dropping health</li>
-			<li>The size of the level is twice as big</li>
-			<li>Bullets are significantly stronger</li>
-			<li>Monsters spawn faster</li>
-			<li>There is a cap on the number of monsters that can spawn</li>
-		</ul>
-		<p>
-			<a href="SurvivalShooterAssets.zip">Many of the original project assets were added to and edited to make these changes. You can download the updated assets here. . </a>
-		</p>
-	</body>
+<body>
+<div id="container">
+	<h1>Tiff's CS4455 Site</h1>
+  <p>
+  	This site contains various projects I made for my CS4455: Video Game Design class.
+  </p>
+  <ul>
+    <li><a href="m0">Milestone 0</a>: A game based on Unity's survival shooter tutorial. </li>
+  </ul>
+  <p>
+  	See the source on <a href="https://github.com/shadowfiles/cs4455">Github</a> or
+  	find more projects by <a href="http://tiffzhang.com/">Tiff Zhang</a>.
+  </p>
+</div>
+<div class="clearfix"></div>
+</body>
 </html>
